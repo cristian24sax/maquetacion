@@ -105,3 +105,26 @@ body{
     transform:scale(1.2,1.2);
 }
 
+/* banner */
+
+#banner{
+    width: 95%;
+    height: 100px;
+    border:10px solid white;
+    box-shadow:0 0 2px gray;
+    background-image: url(../img/bakbaner.png);
+    background-position: -200px -200px;
+    margin: 20px auto;
+}
+#banner h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    color:white;
+    font-weight: normal;
+    font-size: 45px;
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
+    margin: 27px auto ; 
+
+}
