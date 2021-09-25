@@ -37,7 +37,7 @@ body{
     width: 1200px;
     margin: 0 auto;
 }
-.gear,.icon{
+.gear,.icon,#user,#password{
    
     font-family: 'WebSymbolsRegular';
 }
@@ -176,3 +176,4 @@ body{
     font-family: "TrebuchetMS";
     font-size: 15px;
 }
+
