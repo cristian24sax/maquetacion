@@ -171,7 +171,7 @@ body{
     margin: 19.2px;
     margin-top: 40px;
     width: 200px;
-    height:255px;
+    height:300px;
     background-color:white;
     border:1px solid #ccc;
     position: relative;
@@ -323,13 +323,13 @@ body{
     display: block;
     position:absolute;
     text-align: center;
-    margin-left:15px;
+    margin-left:35px;
     margin-top: 6px;
     height: 30px;
 }
 #login #password{
 
-    margin-left:20px;
+    margin-left:35px;
     margin-top: 15px;
     font-size: 20px;
 
