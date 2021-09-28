@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+        url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+.icon{
+   
+    font-family: 'WebSymbolsRegular';
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+}
+.card .icon{
+    display:block;
+    width:100%;
+    height:130px;
+    font-size: 50px;
+    line-height: 110px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card{
+    
+    float: left;
+    overflow: hidden;
+    
+    cursor: pointer;
+    transition: all 200ms; 
+    /*  */
+    width: 300px;
+    height:305px;
+    background-color:white;
+    border:1px solid #ccc;
+    position: relative;
+    border-radius:20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.123);
+
+}
+
+
+
+.content{
+    position:absolute;
+    width: 100%;
+    bottom:0;
+    height:50px;
+    padding: 0.4em 1.5em;
+    font-size:14px;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform:scale(0.9);
+    color:black;
+    border:1px solid rgba(255,255,255,0.164);
+    box-shadow: 0 0 20px rgba(0,0,0,0.144);
+    overflow: hidden;
+    transition: all .4s;
+
+
+}
+
+.content p{
+    font-size:0.8em;
+}
+
+.card:hover .content{
+    height:150px;
+}
