@@ -24,13 +24,15 @@
     font-family: 'WebSymbolsRegular';
 }
 
-body{
+  body{
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
 
-}
+}  
+
+/* cards */
 .card .icon{
     display:block;
     width:100%;
@@ -44,12 +46,9 @@ body{
 .card{
     
     float: left;
-    overflow: hidden;
-    
-    cursor: pointer;
-    transition: all 200ms; 
-    /*  */
-    width: 300px;
+    margin: 15.2px;
+    margin-top: 40px;
+    width: 230px;
     height:305px;
     background-color:white;
     border:1px solid #ccc;

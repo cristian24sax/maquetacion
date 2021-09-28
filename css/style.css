@@ -1,4 +1,5 @@
 /* fuentes */
+
 @font-face {
     font-family: "TrebuchetMS";
     src: url(fonts/TrebuchetMS.ttf);
@@ -28,6 +29,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 body{
@@ -131,53 +134,82 @@ body{
 
 /* cards */
 
-.card{
-    width:205px;
-    height:305px;
-    border:1px solid #ccc;
-    box-shadow: 1px 1px 2px #ddd;
-    float: left;
-    background-color:white;
-    overflow: hidden;
-    margin: 16.2px;
-    margin-top: 40px;
-    cursor: pointer;
-    transition: all 200ms; 
-
-}
-.card:last-child{
-    margin-right: 0;
-}
-
-.card .icon{
-    display:block;
-    width:100%;
-    height:130px;
-    font-size: 50px;
-    line-height: 150px; 
-    text-align: center;
-    margin: 0 auto;
-}
-
 .card .category{
     display:block;
     width:100%;
-    height:50px;
+    height:45px;
     font-family: "TrebuchetMS";
     font-weight: bold; 
     text-align:center;
-    font-size:21px;
-    color:#00538c; 
+    font-size:20px;
+    color:#555; 
 }
 
 .card .description{
     color:#0370b9; 
     text-align:center;
     font-family: "TrebuchetMS";
-    font-size: 15px;
+    font-size: 17px;
+} 
+.card .icon{
+    display:block;
+    width:100%;
+    height:130px;
+    font-size: 50px;
+    line-height: 110px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card{
+    float: left;
+    margin: 16.2px;
+    margin-top: 40px;
+    width: 200px;
+    height:305px;
+    background-color:white;
+    border:1px solid #ccc;
+    position: relative;
+    border-radius:20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.123);
+
 }
 
 
+
+.content{
+    position:absolute;
+    width: 100%;
+    bottom:0;
+    height:50px;
+    padding: 0.4em 1.5em;
+    font-size:14px;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform:scale(0.9);
+    color:black;
+    border:1px solid rgba(255,255,255,0.164);
+    box-shadow: 0 0 20px rgba(0,0,0,0.144);
+    overflow: hidden;
+    transition: all .4s;
+
+
+}
+
+.content p{
+    font-size:0.8em;
+    
+}
+
+.card:hover .content{
+    height:150px;
+}
+.card:last-child{
+    margin-right: 0;
+}
+    
 
 /* barra lateral */
 
