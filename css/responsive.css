@@ -3,9 +3,85 @@
         width: 90%;
         margin: 0 auto;
     }
+    #banner h1{
+        font-size: 30px;
+    }
     .card{
         width: 17%;
         margin: 1.4%;
     }
 
+    #articles{
+        width:64%;
+    }
+
+    #footer .wrap>div{
+        width: 23%;
+    }
+
+    #footer #browser img{
+        width:13%;
+        margin: 0;
+    }
+
+    #footer h5{
+        font-size:30px
+    }
+}
+
+@media (max-width:1050px){
+
+    .card .icon {
+        font-size: 40px;
+    }
+
+    .card .category{
+        font-size: 20px;
+    }
+
+    .card .description{
+        font-size:17px;
+    }
+
+    #articles{
+        width:61%;
+    }
+}
+
+@media (max-width:970px){
+
+    .card .icon {
+        font-size: 38px;
+    }
+
+    .card .category{
+        font-size: 18px;
+    }
+
+    .card .description{
+        font-size:15px;
+    }
+
+    #articles{
+        width:58%;
+    }
+    #articles article  h4{
+        font-size:25px;
+    }
+    #footer h5{
+        font-size:22px
+    }
+    #footer .wrap>div{
+        width: 22%;
+    }
+
+    #footer ul {
+        font-size:17px;
+    }
+
+    #footer ul li  {
+        padding:5px;
+        padding-bottom: 0px;
+        border-bottom: 1px solid white;
+    }
 }
